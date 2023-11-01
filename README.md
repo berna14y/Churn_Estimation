@@ -14,7 +14,7 @@ Churn estimation is a critical aspect of customer relationship management (CRM) 
 
 Steps of my work :
 
-Data Preprocessing:
+1) Data Preprocessing:
 Loaded the dataset from the "Churn_Modelling.csv.xls" file using pandas.
 Removed irrelevant columns: "RowNumber", "CustomerId", and "Surname."
 Identified numerical columns in the DataFrame for further analysis.
@@ -22,17 +22,17 @@ Checked some descriptive statistical information about the numerical columns.
 Explored the percentage of customers who exited (churned) based on gender and geography.
 Analyzed the age distribution and percentage of people in different age groups who exited.
 
-Data Cleaning and Transformation:
+2) Data Cleaning and Transformation:
 Converted the "Age" column into categorical bins (age groups) using pd.cut().
 Performed one-hot encoding on categorical variables (Gender and Geography) to convert them into numerical representations.
 Removed redundant columns "Geography_France" and "Gender_Female" after one-hot encoding.
 Selected features and target variable for model training.
 Saved the cleaned data to a new CSV file named "Clean_data.csv."
 
-Exploratory Data Analysis (EDA):
+3) Exploratory Data Analysis (EDA):
 Conducted correlation analysis using a heatmap to visualize the relationships between features.
 
-Model Training and Evaluation:
+4) Model Training and Evaluation:
 Split the dataset into training and testing sets (70% training, 30% testing).
 Applied StandardScaler to scale the numerical features for better model performance.
 
